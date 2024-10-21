@@ -6,7 +6,6 @@ export function Footer(){
     return(
         <>
             <div className="
-                self-end 
                 w-screen min-w-fit h-24 px-40 
                 bg-[#252a54] 
                 text-white text-2xl 

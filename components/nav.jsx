@@ -9,13 +9,13 @@ export function Nav(){
             bg-[#252a54] text-white text-2xl 
             flex items-center justify-between shrink-0"
         >
-            <a className="w-24 h-full flex items-center" href="/">
+            <a className="w-24 h-full flex items-center" href="/CanSatElektrykPlus">
                 <Image src={logo} alt="Logo"/>
             </a>
             <div className="flex gap-20">
-                <a href="">Strona główna</a>
-                <a href="">O zespole</a>
-                <a href="">Aktualności</a>
+                <a href="/CanSatElektrykPlus/">Strona główna</a>
+                <a href="/CanSatElektrykPlus/aboutTeam">O zespole</a>
+                <a href="/CanSatElektrykPlus">Aktualności</a>
             </div>
             <div></div>
             <div></div>
