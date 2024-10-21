@@ -12,7 +12,6 @@ export function Footer(){
                 flex items-center justify-center gap-36 shrink-0"
             >
                 <a href="https://github.com/makla12/CanSatElektrykPlus">Github</a>
-                <a href="">Sponsorzy</a>
             </div>
         </>
     );

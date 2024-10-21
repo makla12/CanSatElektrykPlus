@@ -2,7 +2,7 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Can sat",
+  title: "Cansat",
 };
 
 export default function RootLayout({ children }) {

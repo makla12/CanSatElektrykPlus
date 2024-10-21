@@ -3,6 +3,7 @@ import { Footer } from "./footer";
 import { ArticleHolder, Article } from "./article";
 import logo from "@/public/logo.png";
 import canSatLogo from "@/public/canSatLogo.png";
+import oProjekcie from "@/public/oProjekcie.png";
 
 export function MainSite(){
     
@@ -29,7 +30,7 @@ export function MainSite(){
                     </div>
                 </Article>
 
-                <Article title={"O projekcie"} image={logo} imageAlt={"Logo"}>
+                <Article title={"O projekcie"} image={oProjekcie} imageAlt={"Logo"}>
                     <div>
                     Obecnym tematem projektu jest ocena możliwości przeżycia człowieka na danym obszarze na podstawie wartości promieniowania UV oraz składu powietrza.
                     W ramach naszego projektu chcemy skupić się na ocenie, czy warunki panujące w określonym obszarze są bezpieczne dla człowieka. 
