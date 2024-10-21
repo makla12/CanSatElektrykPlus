@@ -1,24 +1,22 @@
 import Image from "next/image";
-import logoNapis from "@/public/logoNapis.png";
+import logo from "@/public/logo.png";
 
 export function Nav(){
     
     return(
-        <div className="
-            w-screen min-w-fit h-24 px-40 
-            bg-[#252a54] text-white text-2xl 
-            flex items-center justify-between shrink-0 gap-10"
-        >
-            <a className="w-64 h-full flex items-center" href="/CanSatElektrykPlus">
-                <Image src={logoNapis} alt="Logo" className="w-auto h-auto invert"/>
-            </a>
-            <div className="flex gap-20">
-                <a href="/CanSatElektrykPlus/">Strona główna</a>
-                <a href="/CanSatElektrykPlus/aboutTeam">O zespole</a>
-                <a href="/CanSatElektrykPlus/news">Aktualności</a>
+        <header className="w-full sticky top-0">
+            <div className="container mx-auto flex p-3">
+                <a className="w-16" href="/CanSatElektrykPlus">
+                    <Image src={logo} alt="Logo" className="w-auto h-auto invert"/>
+                </a>
+                <div className="flex flex-1 gap-5 items-center justify-center
+                    text-gray-300">
+                    <a href="/CanSatElektrykPlus/" className="hover:text-gray-50">Strona główna</a>
+                    <a href="/CanSatElektrykPlus/aboutTeam" className="hover:text-gray-50">O zespole</a>
+                    <a href="/CanSatElektrykPlus/news" className="hover:text-gray-50">Aktualności</a>
+                </div>
+                <div className="w-16"></div>
             </div>
-            <div></div>
-            <div></div>
-        </div>
+        </header>
     );
 }
