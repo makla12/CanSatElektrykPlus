@@ -2,6 +2,7 @@ import { Nav } from "./nav";
 import { Footer } from "./footer";
 import { ArticleHolder, Article } from "./article";
 import logo from "@/public/logo.png";
+import canSatLogo from "@/public/canSatLogo.png";
 
 export function MainSite(){
     
@@ -19,15 +20,21 @@ export function MainSite(){
                     </div>
                 </Article>
 
-                <Article title={"O konkursie"} image={logo} imageAlt={"Logo"} reverse>
+                <Article title={"O konkursie"} image={canSatLogo} imageAlt={"Logo"} reverse>
                     <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo, quasi in maxime magnam natus quaerat, fugit necessitatibus impedit adipisci quibusdam debitis corrupti provident quidem molestias laudantium ipsa commodi dolorem.
+                        CanSat to międzynarodowe wyzwanie Europejskiej Agencji Kosmicznej, oferujące uczniom wyjątkową możliwość zdobycia praktycznego doświadczenia i uczestnictwa w prawdziwym projekcie kosmicznym! 
+                        Tak zwany cansat to sonda badawcza mieszcząca się w pojemniku wielkości puszki po napoju. 
+                        Jego zadaniem jest przeprowadzenie badań i eksperymentów podczas lotu rakietą i w trakcie opadania na spadochronie.
+
                     </div>
                 </Article>
 
                 <Article title={"O projekcie"} image={logo} imageAlt={"Logo"}>
                     <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum explicabo, quasi in maxime magnam natus quaerat, fugit necessitatibus impedit adipisci quibusdam debitis corrupti provident quidem molestias laudantium ipsa commodi dolorem.
+                    Obecnym tematem projektu jest ocena możliwości przeżycia człowieka na danym obszarze na podstawie wartości promieniowania UV oraz składu powietrza.
+                    W ramach naszego projektu chcemy skupić się na ocenie, czy warunki panujące w określonym obszarze są bezpieczne dla człowieka. 
+                    Celem naszego zespołu będzie przeprowadzenie pomiarów poziomu promieniowania UV, kluczowych składników atmosferycznych (takich jak stężenie tlenu, dwutlenku węgla i innych gazów) oraz ocena terenu i stopień jego zazielenienia, co pozwoli na określenie, czy dany teren jest zdatny do zamieszkania lub czy jest bezpieczny do krótkotrwałego pobytu.  
+
                     </div>
                 </Article>
                 
