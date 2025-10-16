@@ -1,47 +1,55 @@
 import { Nav } from "./nav";
 import { Footer } from "./footer";
-import { ArticleHolder, Article } from "./article";
-import logo from "@/public/logo.png";
-import canSatLogo from "@/public/canSatLogo.png";
-import oProjekcie from "@/public/oProjekcie.png";
+import Image from "next/image";
+import { HiMiniUserGroup } from "react-icons/hi2";
+import logoNapis from "@/public/logoNapis.png";
+import heroImg from "@/public/hero-main-image.png";
+import zselLogo from "@/public/LOGO_ZSELektryk.png";
 
 export function MainSite(){
     
     return(
-        <>
-        <div className="min-h-screen flex flex-col justify-between gap-24">
+        <main className="relative">
             <Nav />
-            <ArticleHolder>
-                <Article title={"O nas"} image={logo} imageAlt={"Logo"}>
-                    <div>
-                    Jesteśmy grupą uczniów z Technikum nr 1 w zespole Szkół "Elektryk" im. Noblistów Polskich w Słupsku. 
-                    Nasz zespół tworzą osoby z różnych kierunków technicznych jak: programista, informatyk oraz automatyk.
-                    Naszą największą wspólną pasją jest technologia oraz eksploracja kosmosu. 
-                    Fascynuje nas rozwój inżynierii kosmicznej, systemów automatyzacji oraz programowania, które stają się kluczowe w badaniach nad poznawaniem kosmosu.
+            <div className="h-screen relative">
+                <div className="container mx-auto flex flex-col items-start justify-center h-full gap-8">
+                    <div className="w-1/2">
+                        <Image src={logoNapis} alt="Logo" className="w-full h-auto invert"/>
                     </div>
-                </Article>
-
-                <Article title={"O konkursie"} image={canSatLogo} imageAlt={"Logo"} reverse>
-                    <div>
-                        CanSat to międzynarodowe wyzwanie Europejskiej Agencji Kosmicznej, oferujące uczniom wyjątkową możliwość zdobycia praktycznego doświadczenia i uczestnictwa w prawdziwym projekcie kosmicznym! 
-                        Tak zwany cansat to sonda badawcza mieszcząca się w pojemniku wielkości puszki po napoju. 
-                        Jego zadaniem jest przeprowadzenie badań i eksperymentów podczas lotu rakietą i w trakcie opadania na spadochronie.
-
+                    <div className="w-1/2 ps-24 flex">
+                        <div className="w-36 relative">
+                            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 
+                                h-96 w-[2px]
+                                bg-gradient-to-b from-cyan-500 to-primary">
+                                <div className="absolute top-1 left-1/2 transform -translate-x-1/2
+                                    p-1 border-4 border-primary rounded-full bg-neutral-900
+                                    shadow-xl shadow-cyan-500">
+                                    <div className="w-3 h-3 rounded-full bg-cyan-500"></div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div className="text-xl font-medium text-gray-400 space-y-10">
+                            <p>Naszą największą pasją od zawsze jest technologia oraz eksploracja kosmosu 🚀</p>
+                            <div className="flex items-center">
+                                <button className="rounded bg-primary text-gray-50 p-3
+                                    flex items-center gap-1">
+                                    <Image src={zselLogo} alt="Logo" className="w-8 h-auto"/>
+                                    Nasza szkoła
+                                </button>
+                                <div className="bg-gray-300 h-10 w-[1px] mx-6"></div>
+                                <button className="rounded border border-sky-500 text-gray-50 p-3
+                                    flex items-center gap-1">
+                                    <HiMiniUserGroup />
+                                    Zespół
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                </Article>
+                </div>
+            </div>
+            <Image src={heroImg} alt="hero image" className="absolute top-0 right-0 w-full h-auto -z-10 brightness-50"></Image>
 
-                <Article title={"O projekcie"} image={oProjekcie} imageAlt={"Logo"}>
-                    <div>
-                    Obecnym tematem projektu jest ocena możliwości przeżycia człowieka na danym obszarze na podstawie wartości promieniowania UV oraz składu powietrza.
-                    W ramach naszego projektu chcemy skupić się na ocenie, czy warunki panujące w określonym obszarze są bezpieczne dla człowieka. 
-                    Celem naszego zespołu będzie przeprowadzenie pomiarów poziomu promieniowania UV, kluczowych składników atmosferycznych (takich jak stężenie tlenu, dwutlenku węgla i innych gazów) oraz ocena terenu i stopień jego zazielenienia, co pozwoli na określenie, czy dany teren jest zdatny do zamieszkania lub czy jest bezpieczny do krótkotrwałego pobytu.  
-
-                    </div>
-                </Article>
-                
-            </ArticleHolder>
             <Footer />
-        </div>
-        </>
+        </main>
     );
 }
